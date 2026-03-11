@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joy Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#020617;
+position:sticky;
+top:0;
+}
+
+nav h1{
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h2{
+font-size:50px;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+.hero p{
+margin-top:15px;
+font-size:18px;
+color:#cbd5f5;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:12px 30px;
+background:#38bdf8;
+color:black;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.btn:hover{
+background:white;
+}
+
+/* ABOUT */
+
+section{
+padding:80px 10%;
+}
+
+.about{
+text-align:center;
+}
+
+.about h2{
+font-size:35px;
+margin-bottom:20px;
+color:#38bdf8;
+}
+
+.about p{
+max-width:700px;
+margin:auto;
+line-height:1.7;
+color:#cbd5f5;
+}
+
+/* SKILLS */
+
+.skills-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+margin-top:40px;
+}
+
+.skill{
+background:#1e293b;
+padding:30px;
+border-radius:10px;
+text-align:center;
+font-weight:bold;
+transition:0.3s;
+}
+
+.skill:hover{
+transform:scale(1.05);
+background:#38bdf8;
+color:black;
+}
+
+/* PROJECTS */
+
+.projects{
+text-align:center;
+}
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.project{
+background:#1e293b;
+padding:25px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.project:hover{
+transform:translateY(-8px);
+}
+
+.project h3{
+margin-bottom:10px;
+color:#38bdf8;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+.contact h2{
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+.contact p{
+color:#cbd5f5;
+}
+
+/* FOOTER */
+
+footer{
+background:#020617;
+text-align:center;
+padding:20px;
+margin-top:40px;
+color:#94a3b8;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+<h1>JoyDev</h1>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+<div>
+<h2>Hello, I'm <span>Joy</span></h2>
+<p>Frontend Developer | Designer | Tech Enthusiast</p>
+
+<a href="#projects" class="btn">View My Work</a>
+</div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am a passionate web developer who loves building modern
+and responsive websites. I enjoy learning new technologies
+and creating beautiful user experiences.
+</p>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2 style="text-align:center;color:#38bdf8;">My Skills</h2>
+
+<div class="skills-container">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">UI Design</div>
+<div class="skill">Responsive Design</div>
+<div class="skill">Web Development</div>
+<div class="skill">Problem Solving</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section class="projects" id="projects">
+
+<h2>Projects</h2>
+
+<div class="project-grid">
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>A modern personal portfolio website design.</p>
+</div>
+
+<div class="project">
+<h3>Landing Page</h3>
+<p>A responsive landing page for a business.</p>
+</div>
+
+<div class="project">
+<h3>Blog Layout</h3>
+<p>A stylish blog page layout using HTML and CSS.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2>Contact Me</h2>
+
+<p>Email: joy@email.com</p>
+<p>Phone: +233 000 000 000</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Joy Portfolio | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
